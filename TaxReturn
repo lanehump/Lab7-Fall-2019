@@ -1,0 +1,163 @@
+
+/**
+ * Write a description of class TaxReturn here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class TaxReturn
+{
+    private double income;
+    private int single;
+    /**
+     * Constructs object for calculating tax dollars
+     * @param amount double for how much is made in a year
+     * @param status 0 - single 1 -Married filing jointly 2 - Married seperately 3 - Head of Household
+     */
+    public TaxReturn(double amount, int status){
+        income = amount;
+        single = status;
+    }
+    public void calculateTax(){
+        if (income >= 510301 && single == 0){
+            double tax = 37;
+            double taxDue = 153798.5 + (income - 510300) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if(income >= 204101 && single == 0){
+            double tax = 35;
+            double taxDue = 46628.5 + (income - 204100) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 160726 && single == 0){
+            double tax = 32;
+            double taxDue = 32748.5 + (income - 160725) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 84201 && single == 0){
+            double tax = 24;
+            double taxDue = 14382.5 + (income - 84200) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 39476 && single == 0){
+            double tax = 22;
+            double taxDue = 4543 + (income - 39475) * (tax /100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 9701 && single == 0){
+            double tax = 12;
+            double taxDue = 970 + (income - 9700) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 0 && single == 0){
+            double tax = 10;
+            double taxDue = income * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 612351 && single == 1){
+            double tax = 37;
+            double taxDue = 164709.5 + (income - 612350) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 408201 && single == 1){
+            double tax = 35;
+            double taxDue = 93257 + (income - 408200) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 321451 && single == 1){
+            double tax = 32;
+            double taxDue = 65497 + (income - 321450) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 168401 && single == 1){
+            double tax = 24;
+            double taxDue = 28675 + (income - 168400) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 78951 && single == 1){
+            double tax = 22;
+            double taxDue = 9086 + (income - 78950) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 19401 && single == 1){
+            double tax = 12;
+            double taxDue = 1940 + (income - 19400) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 0 && single == 1){
+            double tax = 10;
+            double taxDue = income * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 306176 && single == 2){
+            double tax = 37;
+            double taxDue = 82354.75 + (income - 306175) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 204101 && single == 2){
+            double tax = 35;
+            double taxDue = 46628.50 + (income - 204100) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 160726 && single == 2){
+            double tax = 32;
+            double taxDue = 32748.5 + (income - 160725) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 84201 && single == 2){
+            double tax = 24;
+            double taxDue = 14382.50 + (income - 84200) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 39476 && single == 2){
+            double tax = 22;
+            double taxDue = 39475 + (income - 39475) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 9701 && single == 2){
+            double tax = 12;
+            double taxDue = 970 + (income - 9700) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 0 && single == 2){
+            double tax = 10;
+            double taxDue = income * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 510301 && single == 3){
+            double tax = 37;
+            double taxDue = 152380 + (income - 510300) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 204101 && single == 3){
+            double tax = 35;
+            double taxDue = 45210 + (income - 204100) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 160701 && single == 3){
+            double tax = 32;
+            double taxDue = 31322 + (income - 160700) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 84201 && single == 3){
+            double tax = 24;
+            double taxDue = 12962 + (income - 84200) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 52851 && single == 3){
+            double tax = 22;
+            double taxDue = 6065 + (income - 52850) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 13851 && single == 3){
+            double tax = 12;
+            double taxDue = 1385 + (income - 52850) * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+        else if (income >= 0 && single == 3){
+            double tax = 10;
+            double taxDue = income * (tax / 100);
+            System.out.println("You owe $" + taxDue + " in taxes.");
+        }
+    }
+}
